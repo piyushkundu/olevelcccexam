@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Prepare for O-Level Computer Science and CCC (Course on Computer Concepts) exams with olevelcccexam. Get comprehensive study materials, practice tests, and expert guidance.">
+  <meta name="keywords" content="O-Level, CCC, Computer Science, IT Exams, O-Level Exam, CCC Exam, Study Materials, Practice Tests, NIELIT">
+  <meta name="author" content="olevelcccexam">
+  <meta name="robots" content="index, follow">
+  <title>olevelcccexam</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8349882322928763"
+     crossorigin="anonymous"></script>
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8349882322928763"
+     crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css"> 
+ <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #f0f0f0;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .menu-container {
+        width: 80%;
+      /* background: white; */
+      padding: 15px;
+      /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: relative;
+    }
+
+    menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .menu-button {
+      padding: 12px 24px;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      background: white;
+      color: #2d3748;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    /* Special styling for specific buttons */
+    .menu-button:nth-child(2n) {
+      font-family: 'Cinzel', serif;
+      font-size: 14px;
+    }
+
+    .menu-button:hover {
+      letter-spacing: 1px;
+    }
+
+    .menu-link {
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .menu-container {
+        padding: 10px;
+      }
+      
+      .menu-button {
+        padding: 10px 18px;
+        font-size: 13px;
+      }
+    }
+  </style>
+  <style>
+/** {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  box-sizing: border-box;*/
+/*  font-family: 'Arial', sans-serif;*/
+/*}*/
+
+/*body {*/
+/*  background: #ffffff;*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  padding: 1rem;*/
+/*}*/
+
+.slider-container {
+  width: 85%;
+  max-width: 1200px;
+  height: auto;
+  min-height: 400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.slide a {
+    text-decoration:none;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #ffffff;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.slide.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide.previous {
+  transform: translateX(-100%);
+}
+
+.slide-content {
+  position: relative;
+  padding: 2rem;
+  z-index: 2;
+  background: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.slide.active .slide-content {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-image-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+
+.slide.active .slide-image {
+  transform: scale(1);
+}
+
+.slide-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #2d3436, #0984e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.slide-description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #2d3436;
+  max-width: 90%;
+}
+
+.cta-button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #0984e3, #00cec9);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  overflow: hidden;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(9, 132, 227, 0.3);
+}
+
+.slide-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.nav-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.nav-dot.active {
+  background: #0984e3;
+  transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+  .slider-container {
+    height: auto;
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .slider-container {
+    height: auto;
+    min-height: 300px;
+  }
+  
+  .slide-title {
+    font-size: 2rem;
+  }
+  
+  .slide-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slide-content {
+    width: 100%;
+    padding: 1.5rem;
+    clip-path: none;
+    background: rgba(255, 255, 255, 0.95);
+    position: relative;
+    z-index: 2;
+    order: 2;
+  }
+  
+  .slide-image-container {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    clip-path: none;
+    order: 1;
+  }
+  
+  .slide-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .slide-description {
+    text-align: center;
+    margin: 0 auto 1rem;
+    max-width: 100%;
+  }
+  
+  .cta-button {
+    margin: 13px auto;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    min-height: 350px;
+  }
+
+  .slide-title {
+    font-size: 1.5rem;
+  }
+  
+  .slide-description {
+    font-size: 0.9rem;
+  }
+  
+  .cta-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+</style>
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index">olevelcccexam</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index" class="active">Home</a></li>
+        <li><a href="notes">Notes</a></li>
+        <li><a href="test">Test</a></li>
+        <li><a href="syllabus">Syllabus</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <!-- Welcome Section -->
+
+  <div class="welcome-section">
+      <div class="welcome-message">Welcome to O-Level & CCC Exam Website</div>
+      <div class="short-description">
+        Access comprehensive notes, practice tests, and track your progress for O-Level and CCC exams.
+      </div>
+  <div class="overlay"></div>
+  </div>
+  <!--<div class="tv-container">-->
+  <!--  <div class="tv-screen">-->
+  <!--    <div class="tv-content" id="tv-content">-->
+  <!--      <div id="did-you-know">Did you know?</div>-->
+  <!--      <div id="fact-display"></div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--  <div class="tv-buttons">-->
+  <!--    <div class="tv-button"></div>-->
+  <!--    <div class="tv-button"></div>-->
+  <!--  </div>-->
+  <!--</div>-->
+  <div class="slider-container">
+  <!-- Web Design Slide -->
+  <div class="slide active">
+    <div class="slide-content">
+      <h2 class="slide-title">Master Web Design</h2>
+      <p class="slide-description">Learn modern web development with HTML5, CSS3, and JavaScript. Create responsive, beautiful websites.</p>
+       <a href="https://www.olevelcccexam.link/WebDesigning/webdesigning" class="cta-button">Start Learning</a>
+    </div>
+    <div class="slide-image-container">
+      <img src="https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Design" class="slide-image">
+    </div>
+  </div>
+
+  <!-- Test Preparation Slide -->
+  <div class="slide">
+    <div class="slide-content">
+      <h2 class="slide-title">Expert Test Prep</h2>
+      <p class="slide-description">Comprehensive O Level & CCC exam preparation with practice tests and study materials.</p>
+       <a href="test" class="cta-button">Start Practice</a>
+     
+    </div>
+    <div class="slide-image-container">
+      <img src="https://plus.unsplash.com/premium_photo-1681584471820-e1fe387e9ca3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Test Preparation" class="slide-image">
+    </div>
+  </div>
+
+  <!-- Cybersecurity Slide -->
+  <div class="slide">
+    <div class="slide-content">
+      <h2 class="slide-title">Cybersecurity Awareness</h2>
+      <p class="slide-description">Strengthening Your Defenses: A Guide to Cybersecurity Awareness.</p>
+       <a href="cybersecurity" class="cta-button">Learn More</a>
+     
+    </div>
+    <div class="slide-image-container">
+      <img src="https://plus.unsplash.com/premium_photo-1674506653774-6f51d6ebe799?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cybersecurity" class="slide-image">
+    </div>
+  </div>
+
+  <div class="slide-nav">
+    <div class="nav-dot active"></div>
+    <div class="nav-dot"></div>
+    <div class="nav-dot"></div>
+  </div>
+</div>
+<br> <br>
+  <center>
+  <div class="menu-container">
+   <menu>
+    <li><a href="../index" class="menu-link"><button class="menu-button">Home</button></a></li>
+    <li><a href="test" class="menu-link"><button class="menu-button">Test</button></a></li>
+    <li><a href="https://www.olevelcccexam.link/html/basichtml" class="menu-link"><button class="menu-button">HTML</button></a></li>
+    <li><a href="https://www.olevelcccexam.link/WebDesigning/csspage" class="menu-link"><button class="menu-button">CSS</button></a></li>
+    <li><a href="https://www.olevelcccexam.link/WebDesigning/w3css" class="menu-link"><button class="menu-button">W3CSS</button></a></li>
+    <li><a href="https://www.olevelcccexam.link/html/element" class="menu-link"><button class="menu-button">HTML Elements</button></a></li>
+    <li><a href="https://www.olevelcccexam.link/html/htmlintro" class="menu-link"><button class="menu-button">HTML Introduction</button></a></li>
+    <li><a href="https://www.olevelcccexam.link/WebDesigning/javascript" class="menu-link"><button class="menu-button">JS</button></a></li>
+    <li><a href="#https://www.olevelcccexam.link/practice_test/practice_test" class="menu-link"><button class="menu-button">Practice Test</button></a></li>
+    <li><a href="https://www.olevelcccexam.link/html/practice" class="menu-link"><button class="menu-button">HTML Test</button></a></li>
+    <li><a href="#css-test" class="menu-link"><button class="menu-button">CSS Test</button></a></li>
+    <li><a href="/shortcutkey/LibreOffice_shortcutkey" class="menu-link"><button class="menu-button">Shortcut Keys</button></a></li>
+    <li><a href="/html/html_test_1/index.php" class="menu-link"><button class="menu-button">Test</button></a></li>
+    <li><a href="https://www.olevelcccexam.link/m1r5ptest/practiceTests" class="menu-link"><button class="menu-button">M1-R5 Test</button></a></li>
+    <li><a href="/python/python" class="menu-link"><button class="menu-button">Python</button></a></li>
+    <li><a href="/iot" class="menu-link"><button class="menu-button">IoT</button></a></li>
+    <li><a href=https://drive.google.com/file/d/1S1vZXznFQHFqBLHMzHKX-y1N4gzRkhRP/view?usp=sharing class="menu-link"><button class="menu-button">IoT</button></a></li>
+</menu>
+  </div></center>
+<!--  <div class="card-section">-->
+<!--    <div class="card-container">-->
+<!--      <div class="card" style="animation-delay: 0.1s;">-->
+<!--        <h3><span class="live-test"> Live Test</span></h3>-->
+<!--        <p>Take a live test to assess your skills.</p>-->
+<!--        <a href="chapter6test" class="card-button">Start Test</a>-->
+<!--      </div>-->
+<!--      <div class="card" style="animation-delay: 0.2s;">-->
+<!--          <h3><span class="live-test"> Web Designing</span></h3>-->
+   
+<!--    <p>Learn the fundamentals of web design and enhance your skills.</p>-->
+<!--    <a href="WebDesigning/webdesigning" class="card-button">View Course</a>-->
+<!--</div>-->
+
+      <!--<div class="card" style="animation-delay: 0.2s;">-->
+      <!--  <h3><span class="live-test">O Level Live Test</span></h3>-->
+      <!--  <p>Challenge yourself with an O Level live test.</p>-->
+      <!--  <a href="#" class="card-button">Start Test</a>-->
+      <!--</div>-->
+<!--      <div class="card" style="animation-delay: 0.2s;">-->
+<!--    <h3>Cyber Security Awareness</h3>-->
+<!--    <p>Stay informed and protect yourself from cyber threats.</p>-->
+<!--    <a href="cybersecurity" class="card-button">Learn More</a>-->
+<!--</div>-->
+<!--      <div class="card" style="animation-delay: 0.2s;">-->
+<!--        <h3>Study Notes</h3>-->
+<!--        <p>Access comprehensive notes for all previous tests.</p>-->
+<!--        <a href="notes" class="card-button">View Notes</a>-->
+<!--      </div>-->
+<!--      <div class="card" style="animation-delay: 0.2.5s;">-->
+<!--        <h3>Practice Area</h3>-->
+<!--        <p>Sharpen your skills with our practice questions.</p>-->
+<!--        <a href="practice" class="card-button">Start Practicing</a>-->
+<!--      </div>-->
+<!--      <div class="card" style="animation-delay: 0.2s;">-->
+<!--  <h3>Practice Test</h3>-->
+<!--  <p>Test your knowledge with our interactive practice tests.</p>-->
+<!--  <a href="/practice_test/practice_test" class="card-button">Start Test</a>-->
+<!--</div>-->
+
+<!--      <div class="card" style="animation-delay: 0.2.9s;">-->
+<!--  <h3>Test</h3>-->
+<!--  <p>Evaluate your knowledge with our curated tests designed for O-Level and CCC exams.</p>-->
+<!--  <a href="test" class="card-button">Take Test</a>-->
+<!--</div>-->
+
+<!--<div class="card" style="animation-delay: 0.3s;">-->
+<!--  <h3>Exam Notifications</h3>-->
+<!--  <p>Stay up-to-date with the latest exam schedules, updates, and important announcements.</p>-->
+<!--  <a href="https://student.nielit.gov.in/" class="card-button">View Notifications</a>-->
+<!--</div>-->
+
+<!--    </div>-->
+    
+<!--  </div>-->
+ <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f0f0' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .course-card-section {
+      padding: 1rem;
+      min-height: 100vh;
+    }
+
+    .course-card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 0.5rem;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.25rem;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      border: 2px solid transparent;
+      box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.5),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      transform-style: preserve-3d;
+      perspective: 1000px;
+    }
+
+    .course-card-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 1rem;
+      position: relative;
+      background: linear-gradient(135deg, var(--course-card-gradient-start), var(--course-card-gradient-end));
+      padding: 0.75rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .course-card h3 {
+      color: #1a1a1a;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .course-card p {
+      color: #4a5568;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .course-card-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(135deg, var(--course-card-gradient-start), var(--course-card-gradient-end));
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    /* Card-specific colors and hover borders */
+    .course-card:nth-child(1) {
+      --course-card-gradient-start: #FF6B6B;
+      --course-card-gradient-end: #FF8E53;
+    }
+
+    .course-card:nth-child(2) {
+      --course-card-gradient-start: #4F46E5;
+      --course-card-gradient-end: #7C3AED;
+    }
+
+    .course-card:nth-child(3) {
+      --course-card-gradient-start: #10B981;
+      --course-card-gradient-end: #059669;
+    }
+
+    .course-card:nth-child(4) {
+      --course-card-gradient-start: #3B82F6;
+      --course-card-gradient-end: #2563EB;
+    }
+
+    .course-card:nth-child(5) {
+      --course-card-gradient-start: #EC4899;
+      --course-card-gradient-end: #BE185D;
+    }
+
+    .course-card:nth-child(6) {
+      --course-card-gradient-start: #8B5CF6;
+      --course-card-gradient-end: #6D28D9;
+    }
+
+    .course-card:nth-child(7) {
+      --course-card-gradient-start: #22D3EE;
+      --course-card-gradient-end: #06B6D4;
+    }
+
+    .course-card:hover {
+      border-color: var(--course-card-gradient-start);
+    }
+
+    .course-card-content {
+      position: relative;
+      z-index: 1;
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease;
+    }
+
+    .course-card:hover .course-card-icon {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .course-card-icon svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+
+    .course-card-button svg {
+      width: 14px;
+      height: 14px;
+      margin-left: 0.4rem;
+      transition: transform 0.3s ease;
+    }
+
+    .course-card-button:hover svg {
+      transform: translateX(4px);
+    }
+
+    .course-card-shine {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        45deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.5) 50%,
+        rgba(255,255,255,0) 100%
+      );
+      transform: translateX(-100%);
+      transition: transform 0.6s;
+      pointer-events: none;
+    }
+
+    .course-card:hover .course-card-shine {
+      transform: translateX(100%);
+    }
+
+    .course-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, var(--course-card-gradient-start), var(--course-card-gradient-end));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 14px;
+      z-index: 0;
+    }
+
+    .course-card:hover::before {
+      opacity: 0.05;
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="course-card-section">
+    <div class="course-card-container">
+      <!--  <div class="course-card">-->
+      <!--  <div class="course-card-content">-->
+      <!--    <div class="course-card-icon">-->
+      <!--      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
+      <!--        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>-->
+      <!--        <path d="M3.29 7L12 12l8.71-5"></path>-->
+      <!--        <path d="M12 22V12"></path>-->
+      <!--      </svg>-->
+      <!--    </div>-->
+      <!--    <h3>NIELIT AI-ML Test</h3>-->
+      <!--    <p>Comprehensive assessment covering Artificial Intelligence, Machine Learning, Deep Learning, and Neural Networks fundamentals.</p>-->
+      <!--    <a href="https://docs.google.com/forms/d/e/1FAIpQLSespD9k8hZHd_WzOmK8UZq4hUDPeJM-Lx_BWwiSKdmqhs-f6w/viewform?usp=header" class="course-card-button">-->
+      <!--      Start Assessment-->
+      <!--      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
+      <!--        <path d="M5 12h14m-7-7 7 7-7 7"/>-->
+      <!--      </svg>-->
+      <!--    </a>-->
+      <!--  </div>-->
+      <!--  <div class="course-card-shine"></div>-->
+      <!--</div>-->
+      <!-- Live Test Card -->
+      <div class="course-card">
+        <div class="course-card-content">
+          <div class="course-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 4.5v15m0-15-3 4.5m3-4.5 3 4.5M3 12h18"/>
+            </svg>
+          </div>
+          <h3>Live Test</h3>
+          <p>Real-time assessment with instant feedback and detailed analytics.</p>
+          <a href="https://www.olevelcccexam.link/chapter1test" class="course-card-button">
+            Start Test
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14m-7-7 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="course-card-shine"></div>
+      </div>
+
+      <!-- Web Designing Card -->
+      <div class="course-card">
+        <div class="course-card-content">
+          <div class="course-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <h3>Web Design</h3>
+          <p>Master modern web design with hands-on projects and expert guidance.</p>
+          <a href="WebDesigning/webdesigning" class="course-card-button">
+            View Course
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14m-7-7 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="course-card-shine"></div>
+      </div>
+
+      <!-- Cyber Security Card -->
+      <div class="course-card">
+        <div class="course-card-content">
+          <div class="course-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3l8 4v5c0 4.418-3.582 8-8 8s-8-3.582-8-8V7l8-4z"/>
+              <path d="M12 12v-4m0 8h.01"/>
+            </svg>
+          </div>
+          <h3>Cyber Security</h3>
+          <p>Learn essential security practices and protect your digital assets.</p>
+          <a href="cybersecurity" class="course-card-button">
+            Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14m-7-7 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="course-card-shine"></div>
+      </div>
+
+      <!-- Practice Area Card -->
+      <div class="course-card">
+        <div class="course-card-content">
+          <div class="course-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 3"/>
+            </svg>
+          </div>
+          <h3>Practice Area</h3>
+          <p>Enhance your skills with interactive practice sessions and challenges.</p>
+          <a href="practice" class="course-card-button">
+            Start Practice
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14m-7-7 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="course-card-shine"></div>
+      </div>
+
+      <!-- Test Card -->
+      <div class="course-card">
+        <div class="course-card-content">
+          <div class="course-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Test</h3>
+          <p>Evaluate your knowledge with comprehensive assessment tools.</p>
+          <a href="test" class="course-card-button">
+            Take Test
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14m-7-7 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="course-card-shine"></div>
+      </div>
+
+      <!-- Practice Test Card -->
+      <div class="course-card">
+        <div class="course-card-content">
+          <div class="course-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3>Practice Test</h3>
+          <p>Test your knowledge with our interactive practice tests.</p>
+          <a href="/practice_test/practice_test" class="course-card-button">
+            Start Test
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14m-7-7 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="course-card-shine"></div>
+      </div>
+
+      <!-- Exam Notifications Card -->
+       <!-- Exam Notifications Card -->
+      <!-- <div class="course-card">-->
+      <!--  <div class="course-card-content">-->
+      <!--    <div class="course-card-icon">-->
+      <!--      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
+      <!--        <path d="M16 4v12l-4-2-4 2V4"/>-->
+      <!--        <rect x="3" y="4" width="18" height="16" rx="2"/>-->
+      <!--        <line x1="3" y1="10" x2="21" y2="10"/>-->
+      <!--      </svg>-->
+      <!--    </div>-->
+      <!--    <h3>Exam Notifications</h3>-->
+      <!--    <p>Stay up-to-date with the latest exam schedules, updates, and important announcements.</p>-->
+      <!--    <a href="https://student.nielit.gov.in/" class="course-card-button">-->
+      <!--      View Notifications-->
+      <!--      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
+      <!--        <path d="M5 12h14m-7-7 7 7-7 7"/>-->
+      <!--      </svg>-->
+      <!--    </a>-->
+      <!--  </div>-->
+      <!--  <div class="course-card-shine"></div>-->
+      <!--</div>-->
+      
+      <div class="course-card">
+  <div class="course-card-content">
+    <div class="course-card-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 16v-4"/>
+        <path d="M12 8h.01"/>
+      </svg>
+    </div>
+    <h3>O Level MCQ</h3>
+    <p>Practice with extensive collection of O Level multiple choice questions and detailed explanations.</p>
+    <a href="otherwebsites" class="course-card-button">
+      Start Practice
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14m-7-7 7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+  <div class="course-card-shine"></div>
+</div>
+    </div>
+  </div>
+
+  <script>
+    // Enhanced hover effects
+    document.querySelectorAll('.course-card').forEach(card => {
+      const content = card.querySelector('.course-card-content');
+      
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const rotateX = (e.clientY - centerY) / 20;
+        const rotateY = -(e.clientX - centerX) / 20;
+        
+        content.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        content.style.transform = 'rotateX(0) rotateY(0)';
+      });
+    });
+  </script>
+  <!--<section class="nielit-section">-->
+  <!--  <div class="nielit-card">-->
+  <!--    <div class="nielit-image">-->
+  <!--      <img src="nielit6.jpeg" alt="NIELIT Building" />-->
+  <!--    </div>-->
+  <!--    <div class="nielit-content">-->
+  <!--      <h2 class="nielit-title">NIELIT: Shaping the Future of IT Education</h2>-->
+  <!--      <p class="nielit-description">-->
+  <!--        The National Institute of Electronics & Information Technology (NIELIT) is a prestigious institution under the Ministry of Electronics and Information Technology, Government of India. NIELIT plays a pivotal role in the development of quality education and training in the fields of IT, Electronics, and Communication Technologies.-->
+  <!--      </p>-->
+  <!--      <ul class="nielit-list">-->
+  <!--        <li>Offers CCC (Course on Computer Concepts) for basic computer literacy</li>-->
+  <!--        <li>Provides O Level certification, equivalent to diploma in IT</li>-->
+  <!--        <li>Conducts standardized exams recognized nationwide</li>-->
+  <!--        <li>Facilitates career growth in the IT sector</li>-->
+  <!--      </ul>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</section>-->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>About olevelcccexam</h3>
+        <p>olevelcccexam is your premier resource for O Level Computer Science and CCC (Course on Computer Concepts) exam preparation. We provide comprehensive study materials, practice tests, and expert guidance to help students excel in their exams.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index">Home</a></li>
+          <li><a href="notes">Notes</a></li>
+          <li><a href="test">Test</a></li>
+          <li><a href="syllabus.html">Syllabus</a></li>
+        </ul>
+      </div>
+      <div class="footer-section resources">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">O Level Study Guide</a></li>
+          <li><a href="#">CCC Practice Papers</a></li>
+          <li><a href="#">Video Tutorials</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@olevelcccexam.com</p>
+        <!--<p>Phone: +1 (123) 456-7890</p>-->
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 olevelcccexam. All rights reserved.</p>
+    </div>
+  </footer>
+  
+ <script>
+    const menuContainer = document.querySelector('.menu-container');
+    const buttons = document.querySelectorAll('.menu-button');
+    
+    function handleMouseMove(e) {
+      const menuRect = menuContainer.getBoundingClientRect();
+      const mouseX = e.clientX - menuRect.left;
+      const mouseY = e.clientY - menuRect.top;
+
+      buttons.forEach(button => {
+        const buttonRect = button.getBoundingClientRect();
+        const buttonCenterX = buttonRect.left - menuRect.left + buttonRect.width / 2;
+        const buttonCenterY = buttonRect.top - menuRect.top + buttonRect.height / 2;
+        
+        const distance = Math.sqrt(
+          Math.pow(mouseX - buttonCenterX, 2) + 
+          Math.pow(mouseY - buttonCenterY, 2)
+        );
+        
+        const maxDistance = 150;
+        const intensity = Math.max(0, 1 - (distance / maxDistance));
+        
+        const blueIntensity = Math.min(1, intensity * 1.5);
+        button.style.borderColor = `rgba(0, 123, 255, ${blueIntensity})`;
+        button.style.boxShadow = `
+          0 0 ${intensity * 20}px rgba(0, 123, 255, ${intensity * 0.8}),
+          0 0 ${intensity * 30}px rgba(0, 123, 255, ${intensity * 0.4})
+        `;
+        
+        button.style.transform = `
+          translateY(${-intensity * 2}px) 
+          scale(${1 + intensity * 0.05})
+        `;
+    
+        button.style.textShadow = `0 0 ${intensity * 10}px rgba(0, 123, 255, ${intensity * 0.5})`;
+      });
+    }
+    
+    menuContainer.addEventListener('mousemove', handleMouseMove);
+    
+    menuContainer.addEventListener('mouseleave', () => {
+      buttons.forEach(button => {
+        button.style.borderColor = 'transparent';
+        button.style.boxShadow = 'none';
+        button.style.transform = 'translateY(0) scale(1)';
+        button.style.textShadow = 'none';
+      });
+    });
+  </script>
+  
+    <script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.nav-dot');
+  let currentSlide = 0;
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active', 'previous');
+      if (i < index) {
+        slide.classList.add('previous');
+      }
+    });
+    
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+  }
+  
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+  
+  function previousSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+  
+  // Touch events for mobile swipe
+  document.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+  
+  document.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+  
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const difference = touchStartX - touchEndX;
+    
+    if (Math.abs(difference) > swipeThreshold) {
+      if (difference > 0) {
+        nextSlide();
+      } else {
+        previousSlide();
+      }
+    }
+  }
+  
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentSlide = index;
+      showSlide(currentSlide);
+    });
+  });
+  
+  // Auto-advance slides
+  let slideInterval = setInterval(nextSlide, 5000);
+  
+  // Pause auto-advance on hover
+  document.querySelector('.slider-container').addEventListener('mouseenter', () => {
+    clearInterval(slideInterval);
+  });
+  
+  document.querySelector('.slider-container').addEventListener('mouseleave', () => {
+    slideInterval = setInterval(nextSlide, 5000);
+  });
+  
+  // Make buttons interactive
+ document.querySelectorAll('.cta-button').forEach(button => {
+  button.addEventListener('click', (e) => {
+    // Optional: Add tracking or analytics if needed
+  });
+});
+  </script>
+<script src="scripts.js"></script>
+</body>
+</html>
